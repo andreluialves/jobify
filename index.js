@@ -81,10 +81,10 @@ app.get('/admin/categorias', async (req,res) => {
 });
 
 //Cria um link para deletar as vagas e redireciona para área de admin após apagar a vaga
-app.get('/admin/vagas/delete:id', async (req, res) => {
+app.get('/admin/vagas/delete/:id', async (req, res) => {
     const db = await dbConnection
     await db.run('delete from vagas where id = '+req.params.id+'')
-    res.redirect('admin/vagas')
+    res.redirect('/admin/vagas')
 });
 
 //Cria página/link e a rendereização para uma nova vaga
