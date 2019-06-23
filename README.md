@@ -1,4 +1,4 @@
-# jobify
+# Jobify
 
 Project developed during the course Fullstack Master, of DevPleno (https://www.devpleno.com/).
  
